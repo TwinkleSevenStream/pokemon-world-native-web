@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>你来啦？训练师</title>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+<!--    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!--    MD5加密的js-->
+    <script src="../js/md5.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/checkCode.js"></script>
+    <link rel="stylesheet" href="../css/login.css"/>
+
+</head>
+<body>
+
+<!--<div id="login_frame">-->
+<!--    <div>-->
+<!--        <label for="username" class="label_input">用户名</label>-->
+<!--        <input type="text" name="username" id="username" class="text_field"/>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <label for="password" class="label_input">密码</label>-->
+<!--        <input type="password" name="password" id="password" class="text_field"/>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <input type="button" id="checkCode" class="check-code"/>-->
+<!--        <button id="change-check-code">看不清楚</button><br>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <label for="input-check-code" class="label_input">验证码</label>-->
+<!--        <input type="text" id="input-check-code"/>-->
+<!--    </div>-->
+<!--    <div id="login_control" >-->
+<!--        <a data-title="登录" id="log-in-button" class="animated-expanse-button-a">登录</a>-->
+<!--        <a data-title="注册" id="sign-up-button" class="animated-expanse-button-a">注册</a>-->
+<!--    </div>-->
+<!--&lt;!&ndash;    <form id="login_form" onsubmit="return false;">&ndash;&gt;-->
+<!--&lt;!&ndash;        <button id="login-button">登录</button>&ndash;&gt;-->
+<!--&lt;!&ndash;    </form>&ndash;&gt;-->
+<!--</div>-->
+
+<!-- 登录 - 注册 两个信息框之间的跳转 -->
+<input type="radio" checked id="toggle--login" name="toggle" class="ghost" />
+<input type="radio" id="toggle--signup" name="toggle" class="ghost" />
+
+<!--<img class="logo framed" src="../img/pokemon-logo.png" alt="Pokemon logo" />-->
+
+<!--登录信息框-->
+<form class="form form--login framed">
+    <input type="username" placeholder="请输入用户名" class="input input--top" id="username"/>
+    <input type="password" placeholder="请输入密码" class="input" id="password"/>
+    <input type="button" class="check-code input" id="checkCode"/>
+    <input type="text" placeholder="请输入上方的验证码" class="input" id="input-check-code"/>
+    <input type="submit" value="Log in" class="input input--submit" onclick="return false;" id="log-in-button"/>
+
+<!-- 显示注册信息框 -->
+    <label for="toggle--signup" class="text text--small text--centered jump-font">加入我们</label>
+</form>
+
+<!--注册信息框-->
+<form class="form form--signup framed">
+    <!--    <h2 class="text text&#45;&#45;centered text&#45;&#45;omega">Join the other <b>152.6 million</b> blogs and</br>share all that you love.</h2>-->
+    <input type="username" placeholder="请输入用户名" class="input input--top" id="sign-up-username"/>
+    <input type="password" placeholder="请输入密码" class="input" id="sign-up-password"/>
+    <input type="password" placeholder="请再次输入密码" class="input" id="sign-up-password-again"/>
+    <input type="submit" value="Sign up" class="input input--submit" onclick="return false;" id="sign-up-button"/>
+
+    <!-- 显示登录信息框 -->
+    <label for="toggle--login" class="text text--small text--centered jump-font">返回登录</label>
+</form>
+
+<!-- 背景图片 -->
+<div class="fullscreen-bg"></div>
+
+</body>
+</html>

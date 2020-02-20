@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 方正清刻本悦宋简体;
+    /*src: url('');*/
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #DFF4FC;
+    background-image: url("../img/background/Legendary-Birds.png");   /*背景图片*/
+    background-repeat: no-repeat; /*不平铺*/
+    background-size: cover; /*自动缩放到屏幕大小*/
+    background-attachment: fixed;   /*背景不随内容而滚动*/
+    height: 95%;
+    width: 95%;
+    font: 12px/14px "Microsoft Yahei",arial;
+}
+
+img{
+    /*border-radius: 8px;   圆角*/
+    /*width: auto;*/
+    /*height: auto;*/
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div{
+    display: block;
+}
+
+
+.welcome-text{
+    font-family: 幼圆;
+    font-size: 40px;
+
+    text-align: center; /*文字居中*/
+    background-color: rgba(156, 193, 252, 0.1);   /*透明度*/
+    border-radius: 50px;    /*圆角*/
+
+    width: 700px;
+    /*height: 50px;*/
+    margin: auto;
+    position: absolute;
+
+    left: 23%;
+    top: 65%;
+}
+
+.video-background{
+    text-align: center; /*文字居中*/
+    background-color: rgba(156, 193, 252, 0);   /*透明度*/
+
+    border-radius: 20px;    /*圆角*/
+    width: 680px;
+    height: 400px;
+    margin: auto;
+
+    left: 43%;
+    /*top: 50%;*/
+    transform: translate(-50%,0);
+    position: absolute;
+}
+
+#pokemon-op {
+    /*position: absolute;*/
+    margin: 20px 20px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 20px;
+
+    /*left: 50%;*/
+    /*transform: translate(-50%,0);*/
+
+}
+
+/*左侧浮动栏区样式 - 开始*/
+#model {
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    margin-left: -50px;
+    display: none;
+    background-color: #fff;
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+#model img{
+    max-width: 30%;
+}
+
+#model:hover {
+    /*transition: 0.5s;*/
+    /*transform: scale();*/
+    width: 350px;
+}
+
+.ad_container {
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    font-family: 微软雅黑;
+    font-size: 1.2em;
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.ad_container .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 65px;
+    transition: all 0.3s;
+    color: #000;
+    padding-left: 10px;
+    border: 0px solid #01a2aa;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+
+}
+
+.box:hover {
+    /*transform: scaleY(1.5);*/
+    /*transform-origin: top;*/
+    height: 120px;
+    transition: all 0.3s;
+    /*background-color: #01a2aa;*/
+    background-color: #bfdffc;
+    color: #fff;
+}
+
+/*左侧浮动栏区样式 - 结束*/
+
+/* 把主页面的顶部与下面的图片列表隔开*/
+.placeholder-first {
+    height: 120%;
+}
+
+/*壁纸主容器*/
+.wallpaper-div {
+    display: flex;
+    /*align-items: center;  !*垂直居中*!*/
+    justify-content: center;    /*水平居中*/
+    /*white-space: nowrap;*/
+    /*vertical-align: top;*/
+    /*display: inline-block;*/
+    flex-direction: column;
+}
+
+/*每张壁纸的容器*/
+.wallpaper-each-div {
+    display: flex;
+    justify-content: center;    /*水平居中*/
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+/*壁纸class*/
+.wallpaper {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    /*margin-bottom: 15%;*/
+    /*overflow: auto;*/
+}
+
+/*高斯模糊*/
+.blur {
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
