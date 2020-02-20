@@ -10,19 +10,19 @@
 
 登录：
 
-![login](./web2-screenshot/login.png)
+![login](.\web2-screenshot\login.png)
 
 
 
 注册：
 
-![signup](./web2-screenshot/signup.png)
+![signup](.\web2-screenshot\signup.png)
 
 
 
 主页面：
 
-![index](./web2-screenshot/index.png)
+![index](.\web2-screenshot\index.png)
 
 
 
@@ -42,7 +42,7 @@
 
 #### 浏览器端
 
-![目录结构1](./web2-screenshot/目录结构1.png)
+![目录结构1](.\web2-screenshot\目录结构1.png)
 
 - /public - 静态资源文件目录
   - /css - html需要的css文件
@@ -60,7 +60,7 @@
 
 #### 服务器端
 
-![目录结构2](./web2-screenshot/目录结构2.png)
+![目录结构2](.\web2-screenshot\目录结构2.png)
 
 - /sql - mysql文件
 - express本地服务器，端口：http://127.0.0.1:8082
@@ -77,11 +77,11 @@
 
 与express的方法的不同之处在于，无论前端的请求是get还是post，都可以在createServer的function里进行处理，而express需要对同一请求url设置get和post的两个处理方法。
 
-![http](./web2-screenshot/http.png)
+![http](.\web2-screenshot\http.png)
 
 
 
-![http2](./web2-screenshot/http2.png)
+![http2](.\web2-screenshot\http2.png)
 
 ### 存储账号信息的数据库
 
@@ -91,7 +91,7 @@ Database名：web_database_171250560
 
 Table名：account_web_171250560
 
-![mysql](./web2-screenshot/mysql.png)
+![mysql](.\web2-screenshot\mysql.png)
 
 已存在的两个账号：
 
@@ -107,7 +107,7 @@ Table名：account_web_171250560
 
 ### 验证码
 
-![登陆界面](./web2-screenshot/登陆界面.png)
+![登陆界面](.\web2-screenshot\登陆界面.png)
 
 由前端随机生成验证码，点击验证码可以更换验证码，验证码的验证由前端负责
 
@@ -119,17 +119,17 @@ Table名：account_web_171250560
 
 原理：从[0-9A-Z]中随机选取5个字符作为当前验证码，并将该验证码字符串用全局函数code保存下来，同时将html中该元素的值刷新为本次验证码，css渲染过后显示为当前的验证码。
 
-![验证码算法](./web2-screenshot/验证码算法.png)
+![验证码算法](.\web2-screenshot\验证码算法.png)
 
 /public/css/login.css，前端css渲染
 
-![验证码前端](./web2-screenshot/验证码前端.png)
+![验证码前端](.\web2-screenshot\验证码前端.png)
 
 ### 加密
 
 前端检查验证码正确后会将密码通过MD5进行加密，然后将加密过后的MD5和用户名发到服务器端
 
-![加密信息](./web2-screenshot/加密信息.png)
+![加密信息](.\web2-screenshot\加密信息.png)
 
 加密通过md5.min.js的md5()方法来进行加密
 
@@ -141,7 +141,7 @@ Table名：account_web_171250560
 
 浏览器端通过jQuery选取元素，然后使用ajax向服务器端发送信息
 
-![ajax](./web2-screenshot/ajax.png)
+![ajax](./web2-screenshot\ajax.png)
 
 
 
@@ -155,7 +155,7 @@ Table名：account_web_171250560
 
 ### 注册
 
-![注册](./web2-screenshot/注册.png)
+![注册](.\web2-screenshot\注册.png)
 
 输入注册信息，浏览器端验证过格式正确后会将信息发送到服务器端，服务器端验证数据库中是否存在已有的用户名，如果没有就注册成功
 
@@ -175,13 +175,13 @@ Table名：account_web_171250560
 
 网页交互展示：
 
-![show](./show.gif)
+![show](.\show.gif)
 
 
 
 ### 目录结构
 
-![目录结构](./web3-screenshot/目录结构.png)
+![目录结构](.\web3-screenshot\目录结构.png)
 
 /public - 静态文件存放目录
 
@@ -214,23 +214,23 @@ Table名：account_web_171250560
 
 由于我的背景图大部分都是同一个颜色，因此在加载背景图之前先将背景颜色设置为背景图的主颜色，优化用户体验
 
-![背景图片](./web3-screenshot/背景图片.png)
+![背景图片](.\web3-screenshot\背景图片.png)
 
 
 
 - 左侧浮动栏中的图片
 
-![左侧浮动栏](./web3-screenshot/左侧浮动栏.png)
+![左侧浮动栏](.\web3-screenshot\左侧浮动栏.png)
 
-![model略缩图加载](./web3-screenshot/model略缩图加载.png)
+![model略缩图加载](.\web3-screenshot\model略缩图加载.png)
 
 
 
 - 大图片瀑布流
 
-![瀑布流图](D:/Code/GitRepository2019.9/Web/Web2/web3-screenshot/瀑布流图.png)
+![瀑布流图](D:\Code\GitRepository2019.9\Web\Web2\web3-screenshot\瀑布流图.png)
 
-![model略缩图加载](./web3-screenshot/model略缩图加载.png)
+![model略缩图加载](.\web3-screenshot\model略缩图加载.png)
 
 
 
@@ -240,13 +240,13 @@ Table名：account_web_171250560
 
 略缩图目录为/public/img/tiny，略缩图大小在10kb以内
 
-![略缩图目录](./web3-screenshot/略缩图目录.png)
+![略缩图目录](.\web3-screenshot\略缩图目录.png)
 
 原图大小为几百Kb到几Mb不等
 
-![原图目录1](./web3-screenshot/原图目录1.png)
+![原图目录1](.\web3-screenshot\原图目录1.png)
 
-![原图目录2](./web3-screenshot/原图目录2.png)
+![原图目录2](.\web3-screenshot\原图目录2.png)
 
 ##### 懒加载方式
 
@@ -254,7 +254,7 @@ Table名：account_web_171250560
 
 当观察到有图片进入视图100px以上时，就开始加载原图，将对应图片的data-src的值赋给它的src属性，赋值完后便停止观察该图片
 
-![observer](./web3-screenshot/observer.png)
+![observer](.\web3-screenshot\observer.png)
 
 
 
@@ -264,17 +264,17 @@ Table名：account_web_171250560
 
 考虑到低网速时的加载体验，略缩图对于用户而言太模糊，在原图还没加载完成前，只加载略缩图对用户体验而言不够友好，因此在略缩图上加上一个高斯模糊，优化了观感
 
-![高斯模糊](./web3-screenshot/高斯模糊.png)
+![高斯模糊](.\web3-screenshot\高斯模糊.png)
 
 
 
 高斯模糊效果使用css完成，以class的方式加入到每张图片中：
 
-![高斯模糊css](./web3-screenshot/高斯模糊css.png)
+![高斯模糊css](.\web3-screenshot\高斯模糊css.png)
 
 等原图加载完后，移除该图片的高斯模糊class
 
-![移除高斯模糊js](./web3-screenshot/移除高斯模糊js.png)
+![移除高斯模糊js](.\web3-screenshot\移除高斯模糊js.png)
 
 
 
@@ -282,7 +282,7 @@ Table名：account_web_171250560
 
 视频的加载等到页面加载完成后再加载，左侧浮动栏图片列表的原图也是再页面加载完后再加载
 
-![视频懒加载](./web3-screenshot/视频懒加载.png)
+![视频懒加载](.\web3-screenshot\视频懒加载.png)
 
 
 
@@ -290,13 +290,13 @@ Table名：account_web_171250560
 
 点击页面中左侧浮动栏中的任意一个图片（除了最后一个以外），就会触发**随机背景切换**
 
-![背景切换2](./web3-screenshot/背景切换2.png)
+![背景切换2](.\web3-screenshot\背景切换2.png)
 
 
 
 切换背景时会先切换为要加载的**背景主颜色**，优化加载体验
 
-![背景切换1](./web3-screenshot/背景切换1.png)
+![背景切换1](.\web3-screenshot\背景切换1.png)
 
 
 
@@ -308,22 +308,22 @@ DOM主体（除了背景图片和视频之外）大小在100kb以内
 
 #### 下载速度：1024kb/s
 
-![1m用户](./web3-screenshot/1m用户.png)
+![1m用户](.\web3-screenshot\1m用户.png)
 
 
 
 #### 下载速度：400kb/s
 
-![400k用户](./web3-screenshot/400k用户.png)
+![400k用户](.\web3-screenshot\400k用户.png)
 
 
 
 #### 下载速度：100kb/s
 
-![100k用户](./web3-screenshot/100k用户.png)
+![100k用户](.\web3-screenshot\100k用户.png)
 
 
 
 加载原图时的网页体验：
 
-![100k用户-原图加载](./web3-screenshot/100k用户-原图加载.png)
+![100k用户-原图加载](.\web3-screenshot\100k用户-原图加载.png)
